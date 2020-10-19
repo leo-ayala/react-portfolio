@@ -7,7 +7,7 @@
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   </a>
-</p>
+</p>heroku 
 
 > This application showcases the ability to create a portfolio using React. This application also uses bootstrap to streamline the code and have better performance.
 
