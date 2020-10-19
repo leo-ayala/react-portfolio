@@ -4,6 +4,7 @@ import About from '../pages/About';
 import Resume from '../pages/Resume';
 import Contact from '../pages/Contact';
 import Home from '../pages/Home'
+
 function Portfolio() {
   const [currentPage, handlePageChange] = useState('Home');
 
@@ -24,12 +25,12 @@ function Portfolio() {
   };
 
   return (
-    <div>
+    <div >
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      <div>
+      <div className="render">
         {
           // Render the component returned by 'renderPage()'
-          renderPage()
+        renderPage()
           //
         }
       </div>
