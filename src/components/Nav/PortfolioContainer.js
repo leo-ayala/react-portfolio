@@ -3,9 +3,9 @@ import NavTabs from './NavTabs';
 import About from '../pages/About';
 import Resume from '../pages/Resume';
 import Contact from '../pages/Contact';
-import Home from '../pages/Home'
+import Portfolio from '../pages/Portfolio'
 
-function Portfolio() {
+function PortfolioPage() {
   const [currentPage, handlePageChange] = useState('Home');
 
 
@@ -14,12 +14,14 @@ function Portfolio() {
     switch (currentPage) {
       case 'About':
         return (<About/>)
+      case 'Portfolio':
+        return (<Portfolio/>)
       case 'Resume':
         return (<Resume/>)
       case 'Contact':
         return (<Contact/>)
       default:
-        return (<Home/>)
+        return (<About/>)
       }
     //
   };
@@ -38,4 +40,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default PortfolioPage;

@@ -1,9 +1,16 @@
-import React from "react";
+import React, {Component} from "react";
+import Pdf from '../../leoayala_resume.pdf'
 
-const Resume = () => (
-  <div>
-    <h1>insert resume here</h1>
-  </div>
-);
+class Download extends Component {
 
-export default Resume;
+  render() {
+
+    return (
+      <div className = "App">
+        <a href = {Pdf} target = "_blank">Click here for my resume!</a>
+      </div>
+    );
+  }
+}
+
+export default Download;
